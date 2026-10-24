@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.UserMenu">
+    <children>
+        <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #7B68EE;">
+                    <children>
+                        <Accordion fx:id="accordion" layoutX="16.0" layoutY="67.0" prefHeight="76.0" prefWidth="143.0">
+                            <panes>
+                                <TitledPane animated="false" text="Оставить заявку" />
+                                <TitledPane animated="false" text="Курсы" />
+                                <TitledPane animated="false" text="Прайс-лист" />
+                                <TitledPane animated="false" text="Отзывы" />
+                            </panes>
+                        </Accordion>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="9.0" prefHeight="42.0" prefWidth="131.0" text="SpeakEasy">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                        </Label>
+                    <Button fx:id="exitButton" layoutX="38.0" layoutY="353.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #FF033E;" text="Выход" textFill="WHITE">
+                        <font>
+                            <Font name="Arial Bold" size="14.0" />
+                        </font>
+                    </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <!-- Панель для заявок -->
+                        <AnchorPane fx:id="applicationPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <Button fx:id="btnTraining" layoutX="45.0" layoutY="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="325.0" style="-fx-background-color: #0F1A76;" text="Оставить заявку на обучение" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="btnTeaching" layoutX="45.0" layoutY="207.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="325.0" style="-fx-background-color: #0F1A76;" text="Оставить заявку на преподавание" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Панель для курсов -->
+                        <AnchorPane fx:id="coursesPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <TableView fx:id="coursesTable" layoutX="37.0" layoutY="26.0" prefHeight="257.0" prefWidth="348.0">
+                                    <columns>
+                                        <TableColumn fx:id="courseNameColumn" prefWidth="201.33332443237305" text="Название курса" />
+                                        <TableColumn fx:id="courseLevelColumn" prefWidth="144.6666717529297" text="Уровень" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Панель для прайс-листа -->
+                        <AnchorPane fx:id="pricePane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <TableView fx:id="priceTable" layoutX="37.0" layoutY="26.0" prefHeight="257.0" prefWidth="348.0">
+                                    <columns>
+                                        <TableColumn fx:id="courseNameColumn1" prefWidth="194.66663551330566" text="Название курса" />
+                                        <TableColumn fx:id="coursePriceColumn" prefWidth="152.00001525878906" text="Стоимость" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Панель для отзывов -->
+                        <AnchorPane fx:id="reviewsPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" style="-fx-background-color: #87CEFA;">
+                            <children>
+                                <TableView fx:id="feedbackTable" layoutX="37.0" layoutY="26.0" prefHeight="257.0" prefWidth="348.0">
+                                    <columns>
+                                        <TableColumn fx:id="usernameColumn" prefWidth="131.33333015441895" text="Имя пользователя" />
+                                        <TableColumn fx:id="reviewColumn" prefWidth="235.33329010009766" text="Отзыв" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

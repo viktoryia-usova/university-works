@@ -1,0 +1,17 @@
+Server:
+- add ai choise strategy
+- add tests for all
+
+Generator:
+- api generator
+- syntax highlighting
+
+Client:
+- add sample client
+
+DevOps:
+- docker
+- split versions with/without AI
+
+Backlog:
+- add REST documentation

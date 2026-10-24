@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.EditPrice">
+   <children>
+      <Pane prefHeight="63.0" prefWidth="600.0" style="-fx-background-color: #7B68EE;">
+         <children>
+            <Label layoutX="53.0" layoutY="16.0" text="Школа иностранного языка SpeakEasy" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="154.0" layoutY="73.0" text="Изменение стоимости курса" textFill="#0f1a76">
+         <font>
+            <Font name="Yu Gothic UI Semibold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="223.0" layoutY="121.0" text="Выберите id курса">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="editCourseButton" layoutX="236.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="142.0" style="-fx-background-color: #FF1493;" text="Изменить" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="502.0" layoutY="350.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="73.0" style="-fx-background-color: #FF033E;" text="Отмена" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="coursePriceField" layoutX="165.0" layoutY="219.0" prefHeight="25.0" prefWidth="285.0" />
+      <Label layoutX="198.0" layoutY="191.0" text="Введите стоимость курса">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="groupChoiceBox" layoutX="225.0" layoutY="147.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

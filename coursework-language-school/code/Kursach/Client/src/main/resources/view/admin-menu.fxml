@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.AdminMenu">
+    <children>
+        <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #7B68EE;">
+                    <children>
+                        <Accordion fx:id="accordion" layoutX="16.0" layoutY="67.0" prefHeight="76.0" prefWidth="143.0">
+                            <panes>
+                                <TitledPane animated="false" text="Заявки" />
+                                <TitledPane animated="false" text="Курсы" />
+                                <TitledPane animated="false" text="Прайс-лист" />
+                                <TitledPane animated="false" text="Отзывы" />
+                        <TitledPane animated="false" text="Группы" />
+                        <TitledPane animated="false" text="Расписание" />
+                        <TitledPane animated="false" text="Преподаватели" />
+                        <TitledPane animated="false" text="Студенты" />
+                            </panes>
+                        </Accordion>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="9.0" prefHeight="42.0" prefWidth="131.0" text="SpeakEasy">
+                            <font>
+                                <Font name="System Bold" size="26.0" />
+                            </font>
+                        </Label>
+                    <Button fx:id="exitButton" layoutX="38.0" layoutY="353.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #FF033E;" text="Выход" textFill="WHITE">
+                        <font>
+                            <Font name="Arial Bold" size="14.0" />
+                        </font>
+                    </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" style="-fx-background-color: #87CEFA;">
+                    <children>
+                        <!-- Панель для заявок -->
+                        <AnchorPane fx:id="applicationPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <Button fx:id="studentApplication" layoutX="45.0" layoutY="121.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="325.0" style="-fx-background-color: #0F1A76;" text="Заявки на обучение" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                                <Button fx:id="teacherApplication" layoutX="45.0" layoutY="207.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="325.0" style="-fx-background-color: #0F1A76;" text="Заявки на преподавание" textFill="WHITE">
+                                    <font>
+                                        <Font name="Arial Bold" size="17.0" />
+                                    </font>
+                                </Button>
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Панель для курсов -->
+                        <AnchorPane fx:id="coursesPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <TableView fx:id="coursesTable" layoutX="37.0" layoutY="26.0" prefHeight="257.0" prefWidth="348.0">
+                                    <columns>
+                                        <TableColumn fx:id="courseNameColumn" prefWidth="201.33332443237305" text="Название курса" />
+                                        <TableColumn fx:id="courseLevelColumn" prefWidth="144.6666717529297" text="Уровень" />
+                                    </columns>
+                                </TableView>
+                        <Button fx:id="courseApplication" layoutX="96.0" layoutY="313.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Добавить курс" />
+                        <Button fx:id="deleteCourseButton" layoutX="211.0" layoutY="313.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Удалить курс" />
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Панель для прайс-листа -->
+                        <AnchorPane fx:id="pricePane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <TableView fx:id="priceTable" layoutX="37.0" layoutY="26.0" prefHeight="257.0" prefWidth="348.0">
+                                    <columns>
+                                        <TableColumn fx:id="courseNameColumn1" prefWidth="194.66663551330566" text="Название курса" />
+                                        <TableColumn fx:id="coursePriceColumn" prefWidth="152.00001525878906" text="Стоимость" />
+                                    </columns>
+                                </TableView>
+                        <Button fx:id="editPriceButton" layoutX="143.0" layoutY="312.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Изменить стоимость" />
+                            </children>
+                        </AnchorPane>
+
+                        <!-- Панель для отзывов -->
+                        <AnchorPane fx:id="reviewsPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                            <children>
+                                <TableView fx:id="feedbackTable" layoutX="37.0" layoutY="26.0" prefHeight="257.0" prefWidth="348.0">
+                                    <columns>
+                                        <TableColumn fx:id="usernameColumn" prefWidth="131.33333015441895" text="Имя пользователя" />
+                                        <TableColumn fx:id="reviewColumn" prefWidth="235.33329010009766" text="Отзыв" />
+                                    </columns>
+                                </TableView>
+                        <Button fx:id="deleteFeedbackButton" layoutX="160.0" layoutY="315.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Удалить отзыв" />
+                            </children>
+                        </AnchorPane>
+                <AnchorPane fx:id="groupsPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                     <children>
+                        <TableView fx:id="groupsTable" layoutX="15.0" layoutY="30.0" prefHeight="200.0" prefWidth="383.0">
+                          <columns>
+                            <TableColumn fx:id="groupNumberColumn" prefWidth="58.66662788391113" text="Номер" />
+                            <TableColumn fx:id="TeacherColumn" prefWidth="113.33336639404297" text="Преподаватель" />
+                              <TableColumn fx:id="languageColumn" prefWidth="89.33332824707031" text="Язык" />
+                              <TableColumn fx:id="groupDateColumn" minWidth="7.333343505859375" prefWidth="73.33331298828125" text="День" />
+                              <TableColumn fx:id="groupTimeColumn" prefWidth="46.66667683919269" text="Время" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="deleteGroupButton" layoutX="163.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #C9B2E1;" text="Удалить группу" />
+                        <Button fx:id="addGroupButton" layoutX="14.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="117.0" style="-fx-background-color: #C9B2E1;" text="Добавить группу" />
+                        <Button fx:id="addToGroupButton" layoutX="292.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #C9B2E1;" text="Изменить состав" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane fx:id="schedulePane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                     <children>
+                        <TableView fx:id="schedulesTable" layoutX="23.0" layoutY="27.0" prefHeight="233.0" prefWidth="375.0">
+                          <columns>
+                            <TableColumn fx:id="scheduleDateColumn" prefWidth="121.33332252502441" text="Дата" />
+                            <TableColumn fx:id="scheduleTimeColumn" prefWidth="79.33331298828125" text="Время" />
+                              <TableColumn fx:id="scheduleRoomColumn" prefWidth="81.33338928222656" text="Класс" />
+                              <TableColumn fx:id="scheduleGroupColumn" prefWidth="91.33333333333331" text="Группа" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="editScheduleButton" layoutX="126.0" layoutY="310.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Изменить расписание" />
+                        <Button fx:id="deleteScheduleButton" layoutX="126.0" layoutY="348.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #C9B2E1;" text="Удалить расписание" />
+                        <Button fx:id="addScheduleButton" layoutX="127.0" layoutY="272.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Добавить расписание" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane fx:id="teachersPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                     <children>
+                        <TableView fx:id="teachersTable" layoutX="17.0" layoutY="23.0" prefHeight="200.0" prefWidth="383.0">
+                          <columns>
+                            <TableColumn fx:id="NameColumn" prefWidth="75.0" text="Имя" />
+                            <TableColumn fx:id="LastnameColumn" prefWidth="73.33330535888672" text="Фамилия" />
+                              <TableColumn fx:id="PhoneColumn" prefWidth="120.00001525878906" text="Номер телефона" />
+                              <TableColumn fx:id="LangColumn" prefWidth="113.33333333333331" text="Язык" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="editTeacherButton" layoutX="41.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Изменить данные" />
+                        <Button fx:id="deleteTeacherButton" layoutX="233.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Удалить преподавателя" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane fx:id="studentsPane" minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="416.0" visible="false">
+                     <children>
+                        <TableView fx:id="studentsTable" layoutX="15.0" layoutY="40.0" prefHeight="204.0" prefWidth="383.0">
+                          <columns>
+                            <TableColumn fx:id="StNameColumn" prefWidth="66.0000171661377" text="Имя" />
+                            <TableColumn fx:id="StLastnameColumn" prefWidth="91.33330535888672" text="Фамилия" />
+                              <TableColumn fx:id="StLanguageColumn" prefWidth="90.00001525878906" text="Язык" />
+                              <TableColumn fx:id="StGroupColumn" prefWidth="54.0" text="Группа" />
+                              <TableColumn fx:id="StPhoneColumn" prefWidth="79.33334350585938" text="Номер" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="editStudentButton" layoutX="64.0" layoutY="309.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Изменить данные" />
+                        <Button fx:id="deleteStudentButton" layoutX="235.0" layoutY="309.0" mnemonicParsing="false" style="-fx-background-color: #C9B2E1;" text="Удалить студента" />
+                     </children>
+                  </AnchorPane>
+
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+      <Accordion />
+    </children>
+</AnchorPane>

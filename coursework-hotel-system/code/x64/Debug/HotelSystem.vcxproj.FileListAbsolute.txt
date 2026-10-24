@@ -1,0 +1,5 @@
+C:\Users\Asus\Desktop\БГУИР\development\C_projects\HotelSystem\x64\Debug\HotelSystem.exe
+G:\Projects\CourseWorks\1.2\New\HotelSystem\x64\Debug\HotelSystem.exe
+C:\Users\Asus\Desktop\HotelSystem\x64\Debug\HotelSystem.exe
+C:\Users\Asus\Desktop\курсач\HotelSystem\x64\Debug\HotelSystem.exe
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\x64\Debug\HotelSystem.exe

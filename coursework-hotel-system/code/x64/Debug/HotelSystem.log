@@ -1,0 +1,24 @@
+﻿  Account.cpp
+  BorrowOrder.cpp
+  BorrowRecord.cpp
+  ClientInfo.cpp
+  Credentials.cpp
+  Date.cpp
+  HotelSystem.cpp
+  Menu.cpp
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(232,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(302,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(366,42): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(523,38): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(580,38): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(718,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(743,51): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(767,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(1414,49): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Menu.cpp(1458,44): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  Room.cpp
+C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\Room.cpp(42,39): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+  RoomType.cpp
+  Utils.cpp
+  Создание кода...
+  HotelSystem.vcxproj -> C:\Users\Asus\Desktop\БГУИР\1 курс\Курсовая работа 1-курс_2-семестр\HotelSystem\x64\Debug\HotelSystem.exe

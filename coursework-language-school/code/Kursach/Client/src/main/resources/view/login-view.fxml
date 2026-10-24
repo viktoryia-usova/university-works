@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Login">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="165.0" layoutY="61.0" prefHeight="27.0" prefWidth="181.0" text="Войти в аккаунт" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textfieldUsername" layoutX="132.0" layoutY="109.0" prefHeight="27.0" prefWidth="235.0" promptText="Username" style="-fx-border-width: 1;" />
+      <Button fx:id="loginButton" layoutX="180.0" layoutY="252.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#loginButton_Pressed" prefHeight="35.0" prefWidth="131.0" style="-fx-background-color: #FF1493; -fx-background-radius: 5;" text="Войти" textAlignment="CENTER" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></Button>
+      <Label layoutX="211.0" layoutY="307.0" text="Нет аккаунта?">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="registerButton" defaultButton="true" layoutX="180.0" layoutY="330.0" mnemonicParsing="false" onAction="#registerButton_Pressed" prefHeight="35.0" prefWidth="131.0" style="-fx-background-color: #FF1493; -fx-background-radius: 5;" text="Регистрация" textAlignment="CENTER" textFill="WHITE" />
+      <Label alignment="TOP_CENTER" disable="true" layoutX="113.0" layoutY="223.0" prefHeight="16.0" prefWidth="273.0" style="-fx-text-fill: #ff0202;" text="Invalid data. Check your data and repeat" textAlignment="CENTER" textFill="#ff0202" underline="true" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordfieldPassword" layoutX="132.0" layoutY="165.0" prefHeight="25.0" prefWidth="235.0" promptText="Password" />
+      <Pane layoutY="-1.0" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #7B68EE;">
+         <children>
+            <Label alignment="TOP_CENTER" layoutY="16.0" prefHeight="16.0" prefWidth="500.0" text="Школа иностранного языка SpeakEasy" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.EnglishTest">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="14.0" prefHeight="29.0" prefWidth="547.0" text="Тестирование на знание Английского языка">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answer1" layoutX="26.0" layoutY="111.0" prefHeight="25.0" prefWidth="217.0" />
+      <Label layoutX="194.0" layoutY="44.0" text="Поставьте нужную форму">
+         <font>
+            <Font name="Book Antiqua" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="85.0" text="1) I ___ (live) in London">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="answer2" layoutX="26.0" layoutY="168.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="answer3" layoutX="26.0" layoutY="231.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="answer4" layoutX="26.0" layoutY="294.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="answer5" layoutX="341.0" layoutY="111.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="answer6" layoutX="341.0" layoutY="168.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="answer7" layoutX="341.0" layoutY="231.0" prefHeight="25.0" prefWidth="217.0" />
+      <TextField fx:id="answer8" layoutX="341.0" layoutY="294.0" prefHeight="25.0" prefWidth="217.0" />
+      <Label layoutX="28.0" layoutY="148.0" text="2) She ___ (not like) coffee.">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="211.0" text="3) He ___ (read) a book at the moment.">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="274.0" prefWidth="301.0" text="4) They ___ (already/finish) their homework.">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="85.0" text="5) I ___ (go) to the gym every day.">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="340.0" layoutY="148.0" text="6) The car ___ (repair) right now.">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="191.0" lineSpacing="2.0" prefHeight="40.0" prefWidth="258.0" text="7) If I ___ (study) harder, I would have passed the exam." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="341.0" layoutY="254.0" prefHeight="40.0" prefWidth="258.0" text="8) I wish I ___ (not miss) the train this morning." wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="sendButton" layoutX="226.0" layoutY="341.0" mnemonicParsing="false" style="-fx-background-color: #FF1493;" text="Отправить ответы" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="514.0" layoutY="357.0" mnemonicParsing="false" style="-fx-background-color: #FF033E;" text="Назад" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

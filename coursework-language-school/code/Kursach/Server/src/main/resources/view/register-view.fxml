@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #87CEFA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.org.example.RegistrationController">
+   <children>
+      <SplitPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="55.0" prefWidth="600.0" style="-fx-background-color: #7B68EE;">
+         <items>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" prefHeight="31.0" prefWidth="600.0" text="Регистрация" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="21.0" />
+               </font>
+            </Label>
+         </items>
+      </SplitPane>
+      <TextField layoutX="208.0" layoutY="83.0" prefHeight="25.0" prefWidth="183.0" promptText="Имя" />
+      <TextField layoutX="208.0" layoutY="136.0" prefHeight="25.0" prefWidth="183.0" promptText="Фамилия" />
+      <TextField layoutX="208.0" layoutY="187.0" prefHeight="25.0" prefWidth="183.0" promptText="Номер телефона" />
+      <TextField layoutX="208.0" layoutY="238.0" prefHeight="25.0" prefWidth="183.0" promptText="Username" />
+      <PasswordField layoutX="208.0" layoutY="290.0" prefHeight="25.0" prefWidth="183.0" promptText="Password" />
+      <Button layoutX="236.0" layoutY="336.0" mnemonicParsing="false" style="-fx-background-color: #FF1493;" text="Зарегистрироваться" textFill="WHITE" />
+   </children>
+</AnchorPane>
