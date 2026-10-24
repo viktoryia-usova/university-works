@@ -1,0 +1,13 @@
+# Visual Studio мусор
+.vs/
+*.suo
+*.vsidx
+*.ipch
+*.db
+bin/
+obj/
+*.user
+
+# Windows мусор
+Thumbs.db
+desktop.ini
